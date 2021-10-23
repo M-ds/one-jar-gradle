@@ -1,0 +1,52 @@
+import org.springframework.boot.gradle.plugin.SpringBootPlugin
+
+plugins {
+    id 'org.springframework.boot' version '2.5.5' apply false
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    // Plugin to build the frontend from the gradle file
+    id 'org.siouan.frontend-jdk11' version '5.3.0'
+    id 'java'
+}
+
+group = 'nl.pbsw'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+// Used for all the modules (also the root)
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: "io.spring.dependency-management"
+
+    dependencyManagement {
+        imports {
+            mavenBom SpringBootPlugin.BOM_COORDINATES
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+// Code block is responsible for building the frontend and set it to the dist folder within the frontend folder
+frontend {
+    packageJsonDirectory = new File('./application/frontend/')
+    nodeVersion = '16.8.0'
+    assembleScript = 'run build'
+//	cleanScript = 'run clean' //todo: fix this block as run clean is not existing.
+    // perhaps you can make a script or something? :D (try it out and document that)
+}
+
+build {
+    doFirst {
+        copy {
+            from "./src/frontend/dist"
+            into "${buildDir}/resources/main/static"
+        }
+    }
+}
