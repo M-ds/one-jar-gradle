@@ -1,4 +1,5 @@
 .idea
 .gradle
 
-
+application/frontend/node_modules
+application/frontend/build
