@@ -3,3 +3,8 @@
 
 application/frontend/node_modules
 application/frontend/build
+
+build
+application/configuration/build
+application/controller/build
+application/core/build
