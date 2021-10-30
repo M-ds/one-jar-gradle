@@ -3,15 +3,15 @@
 
 # Gradle build folders
 /build
-/common/build
-/core/build
-/presentation/build
+/application/common/build
+/application/core/build
+/application/presentation/build
 
 # frontend releated ignores
-/frontend/dist
-/frontend/node_modules
+/application/frontend/dist
+/application/frontend/node_modules
 
 /node
-/presentation/node
-/presentation/.gradle
-/presentation/src/main/resources/static
+/application/presentation/node
+/application/presentation/.gradle
+/application/presentation/src/main/resources/static

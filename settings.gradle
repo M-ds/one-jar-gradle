@@ -1,7 +1,7 @@
 rootProject.name = 'one-jar-gradle'
 
 include(
-        'presentation',
-        'core',
-        'common'
+        ":application:presentation",
+        ":application:core",
+        ":application:common"
 )

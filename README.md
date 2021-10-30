@@ -5,5 +5,5 @@ This is a sample project, to create a fat-jar containing the frontend and multip
 - `./gradlew assembleFrontend`
 - `./gradlew moveFiles`
 - `./gradlew build`
-- `mv ./presentation/build/libs/presentation-0.1-SNAPSHOT.jar ~/Desktop`
+- `mv ./application/presentation/build/libs/presentation-0.1-SNAPSHOT.jar ~/Desktop`
 - `sudo java -jar presentation-0.1-SNAPSHOT.jar`

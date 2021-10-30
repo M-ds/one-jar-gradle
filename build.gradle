@@ -33,13 +33,13 @@ allprojects {
 
 // Code block is responsible for building the frontend and set it to the dist folder within the frontend folder
 frontend {
-    packageJsonDirectory = new File('./frontend/')
+    packageJsonDirectory = new File('./application/frontend/')
     nodeVersion = '16.8.0'
     assembleScript = 'run build'
     cleanScript = 'run clean'
 }
 
 task moveFiles(type: Copy) {
-    from(file("./frontend/dist"))
-    into("./presentation/src/main/resources/static")
+    from(file("./application/frontend/dist"))
+    into("./application/presentation/src/main/resources/static")
 }
