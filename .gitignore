@@ -1,7 +1,17 @@
-build
 .gradle
 .idea
 
+# Gradle build folders
+/build
 /common/build
 /core/build
 /presentation/build
+
+# frontend releated ignores
+/frontend/dist
+/frontend/node_modules
+
+/node
+/presentation/node
+/presentation/.gradle
+/presentation/src/main/resources/static
