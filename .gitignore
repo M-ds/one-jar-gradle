@@ -3,6 +3,7 @@
 
 # Gradle build folders
 /build
+/application/build
 /application/common/build
 /application/core/build
 /application/presentation/build
