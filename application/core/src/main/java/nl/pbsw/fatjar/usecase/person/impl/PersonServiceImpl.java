@@ -1,9 +1,9 @@
-package nl.pbsw.fatjar.person.impl;
+package nl.pbsw.fatjar.usecase.person.impl;
 
 import nl.pbsw.fatjar.StringUtils;
 import nl.pbsw.fatjar.domain.Address;
 import nl.pbsw.fatjar.domain.Person;
-import nl.pbsw.fatjar.person.PersonService;
+import nl.pbsw.fatjar.usecase.person.PersonService;
 
 public class PersonServiceImpl implements PersonService {
 
