@@ -6,13 +6,13 @@
 /application/build
 /application/common/build
 /application/core/build
-/application/presentation/build
+/application/springboot/build
 
 # frontend releated ignores
 /application/frontend/dist
 /application/frontend/node_modules
 
 /node
-/application/presentation/node
-/application/presentation/.gradle
-/application/presentation/src/main/resources/static
+/application/springboot/node
+/application/springboot/.gradle
+/application/springboot/src/main/resources/static
