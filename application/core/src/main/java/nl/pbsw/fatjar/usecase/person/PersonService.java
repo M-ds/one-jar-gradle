@@ -1,4 +1,4 @@
-package nl.pbsw.fatjar.person;
+package nl.pbsw.fatjar.usecase.person;
 
 import nl.pbsw.fatjar.domain.Address;
 import nl.pbsw.fatjar.domain.Person;

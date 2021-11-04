@@ -9,3 +9,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
+
+build {
+    archivesBaseName = "OneFatJar"
+    version = "0.1.1"
+}

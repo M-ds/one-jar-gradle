@@ -40,5 +40,5 @@ frontend {
 
 task moveFiles(type: Copy) {
     from(file("./application/frontend/dist"))
-    into("./application/presentation/src/main/resources/static")
+    into("./application/springboot/src/main/resources/static")
 }

@@ -2,7 +2,7 @@ package nl.pbsw.fatjar.controller.person;
 
 import nl.pbsw.fatjar.controller.person.dto.PersonDto;
 import nl.pbsw.fatjar.controller.person.response.PersonResponse;
-import nl.pbsw.fatjar.person.PersonService;
+import nl.pbsw.fatjar.usecase.person.PersonService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
